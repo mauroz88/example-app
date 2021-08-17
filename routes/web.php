@@ -22,3 +22,7 @@ Route::get('/adminlte', function () {
     return view('adminlte');
 });
 
+Route::get('/login', function () {
+    return view('login');
+});
+

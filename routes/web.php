@@ -1,6 +1,5 @@
 <?php
 
-use Illuminate\Auth\Events\Login;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,16 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/', function () {
+    return view('welcome');
+});
 
-Route::get('/inicio', function () {
-    return view('inicio');
-})->name('inicio');
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
 
-Route::get('/adminlte', function () {
-    return view('adminlte');
-})->name('adminlte');
-
-Route::get('/login', function () {
-    return view('login');
-})->name('login');
-
+require __DIR__.'/auth.php';

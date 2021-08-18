@@ -24,8 +24,6 @@
 			<img src="{{ asset('img/img2.png') }}" class="img-2 " alt="">
 			<img src="{{ asset('img/img2.png') }}" class="img-2 " alt="">
 		</div>
-
-
 	</section>
 	<section class="section3 text-center fondo-verde" id="section3" style="background: #1abc9c">
 		<h1>ABOUT</h1>
